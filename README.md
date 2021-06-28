@@ -5,7 +5,7 @@
  
   This application uses Rapid API'S Currency Converter API to convert the currency using the latest currency rates.
   
-  The supported currencies for this application are:
+  ### The supported currencies for this application are:
     * Kenyan Shilling (KES)
     * U.S. Dollar (USD)
     * European Euro (EUR)
