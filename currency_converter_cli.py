@@ -4,8 +4,15 @@ from PyInquirer import style_from_dict, Token, prompt, Separator
 from prompt_toolkit.validation import Validator, ValidationError
 from pprint import pprint
 import json
-
 import requests
+
+# python module for converting strings into ASCII Text with arts fonts
+from pyfiglet import Figlet
+
+f = Figlet(font='doom')
+print(f.renderText('Currency Converter'))
+
+
 
 # style CLI interface
 style = style_from_dict({
@@ -35,7 +42,7 @@ questions = [
         'choices' : [
             Separator('= The Base Currencies ='),
             {
-                'name' : 'KSH'
+                'name' : 'KES'
             },
             {
                 'name' : 'USD'
@@ -63,9 +70,6 @@ questions = [
             },
             {
                 'name' : 'NZD'
-            },
-            {
-                'name' : 'BTC'
             }
         ],
         'validate': lambda answer: 'You must choose at least one Base Currency.' \
@@ -78,7 +82,7 @@ questions = [
         'choices' : [
             Separator('= The Result Currencies ='),
             {
-                'name' : 'KSH'
+                'name' : 'KES'
             },
             {
                 'name' : 'USD'
@@ -106,9 +110,6 @@ questions = [
             },
             {
                 'name' : 'NZD'
-            },
-            {
-                'name' : 'BTC'
             }
         ],
         'validate': lambda answer: 'You must choose at least one Result Currency.' \
@@ -149,7 +150,7 @@ class CurrencyConverter:
         response = requests.request("GET", url, headers=headers, params=querystring)
 
         return response.text
-        
+
 # create currency converter object       
 currency_converter = CurrencyConverter()
 
