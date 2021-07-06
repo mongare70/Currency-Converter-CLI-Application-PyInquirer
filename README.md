@@ -39,6 +39,7 @@ to convert the currency using the latest currency rates.
 #3. Usage
 The following screencast shows how to run the app. Check it out:
 
+https://user-images.githubusercontent.com/46082842/124652461-d7b68d00-dea4-11eb-8b6f-ee4cd140025b.mp4
   
 
 ## Credits
