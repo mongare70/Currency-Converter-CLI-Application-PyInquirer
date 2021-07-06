@@ -1,0 +1,4 @@
+pyinquirer
+pyfiglet
+requests
+termcolor
