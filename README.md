@@ -43,7 +43,7 @@ The following screencast shows how to run the app. Check it out:
 
 ## Credits
 
-1. [Humphrey Musonye](https://github.com/hmusonye)
+1. [Hillary Mongare](https://github.com/mongare70)
 
 2. The [SkaeHub](https://skaehub.com/) community.
 
