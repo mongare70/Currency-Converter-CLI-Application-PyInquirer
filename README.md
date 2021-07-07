@@ -36,7 +36,15 @@ to convert the currency using the latest currency rates.
 4. cd into the **app** folder and run `python currency_converter_cli.py`
 
 
-#3. Usage
+#3. Commands
+
+The following are the commands used in this program:
+
+1. *cconverter run*
+2. *cconverter quit*
+
+
+#4. Usage
 The following screencast shows how to run the app. Check it out:
 
 https://user-images.githubusercontent.com/46082842/124652461-d7b68d00-dea4-11eb-8b6f-ee4cd140025b.mp4
