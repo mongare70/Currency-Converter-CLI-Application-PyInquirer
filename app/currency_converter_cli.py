@@ -5,7 +5,9 @@ from termcolor import colored
 from pprint import pprint
 import sys, os
 import json
-import requests
+
+# import currency converter class
+from currency_converter_class import CurrencyConverter
 
 # python module for converting strings into ASCII Text with arts fonts
 from pyfiglet import Figlet
@@ -156,44 +158,7 @@ def currency_converter():
             answers = prompt(questions, style=style)
             pprint(answers)  # use the answers as input for your app
 
-
-            # currency convert class
-            class CurrencyConverter:
-                def __init__(self, base_currency, result_currency, amount_to_convert):
-                    self.base = base_currency
-                    self.result = result_currency
-                    self.amount = amount_to_convert
-
-
-                # Convert currency method
-                def convert(self):
-                    
-                    # check if base, result, and amount have been parsed
-                    if self.base and self.result and self.amount:
-
-                        # check if amount is integer or float
-                        if isinstance(self.amount, int) or isinstance(self.amount, float):
-                            url = "https://currency-converter5.p.rapidapi.com/currency/convert"
-
-                            querystring = {"format":"json","from":self.base,"to":self.result,"amount":"{}".format(self.amount)}
-
-                            headers = {
-                                'x-rapidapi-key': "4c7fdf69eemsh8d6039574576e92p17fed4jsnf84661b04230",
-                                'x-rapidapi-host': "currency-converter5.p.rapidapi.com"
-                            }
-
-                            response = requests.request("GET", url, headers=headers, params=querystring)
-
-                            # return response
-                            return response.text
-                        
-                        else:
-                            return False
-
-                    else:
-                        return False
-
-            # create object       
+            # create object using CurrencyConverter class      
             transaction = CurrencyConverter(answers['base currency'], answers['result currency'], answers['amount to convert'])
 
             # convert currency and put it into a dictionary

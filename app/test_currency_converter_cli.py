@@ -1,5 +1,5 @@
 import unittest
-from currency_converter_cli import CurrencyConverter
+from currency_converter_class import CurrencyConverter
 
 class TestCurrencyConverter(unittest.TestCase):
     # test with no arguments 
