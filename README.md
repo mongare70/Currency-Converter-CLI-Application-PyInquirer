@@ -48,6 +48,21 @@ The following are the commands used in this program:
 The following screencast shows how to run the app. Check it out:
 
 https://user-images.githubusercontent.com/46082842/124652461-d7b68d00-dea4-11eb-8b6f-ee4cd140025b.mp4
+
+
+
+#5. Tests
+
+To run tests ensure that you are within the *virtual environment* and have the following installed:
+
+1. *pytest*
+2. *pytest-cov*
+
+After ensuring the above, within the **app folder** run :
+
+`pytest` or
+
+`pytest --cov=test_currency_converter_cli`
   
 
 ## Credits
