@@ -1,6 +1,6 @@
-# Currency Converter (CLI Application)
-
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7ff729f29a26451bb845929a87966750)](https://app.codacy.com/gh/mongare70/Currency-Converter-CLI-Application-PyInquirer?utm_source=github.com&utm_medium=referral&utm_content=mongare70/Currency-Converter-CLI-Application-PyInquirer&utm_campaign=Badge_Grade_Settings)
+
+# Currency Converter (CLI Application)
 
 >A project done in fulfillment of the first checkpoint of the SkaeHub Developer Program
 
