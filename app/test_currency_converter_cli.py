@@ -17,7 +17,7 @@ class TestCurrencyConverter(unittest.TestCase):
     # test with all arguments
     def test_convert_all_arguments(self):
         self.assertAlmostEqual(CurrencyConverter("KES", "USD", 10000).convert(),
-        {'USD': {"currency_name": "United States dollar", "rate": "0.0093", "rate_for_amount": "92.7734"}})
+        {'USD': {'currency_name': 'United States dollar', 'rate': '0.0093', 'rate_for_amount': '92.7734'}})
 
     # test with all arguments lowercase
     def test_convert_all_arguments(self):
